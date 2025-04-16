@@ -1,2 +1,2 @@
-# Drone-Obstacle-Avoidance
-这是一个着重于研究无人机避障的项目
+# Drone-Obstacle-Hunt
+这是一个多无人机协同抓捕项目

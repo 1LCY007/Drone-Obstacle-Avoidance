@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<launch>
+    <!-- 启动控制无人机的节点 -->
+    <node pkg="follow" type="runner_escape.py" name="runner_escape" output="screen"/>
+</launch>

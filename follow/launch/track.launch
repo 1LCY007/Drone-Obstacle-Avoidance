@@ -1,0 +1,9 @@
+<launch>
+    <!-- 启动无人机轨迹跟踪节点 -->
+    <node pkg="follow" type="pose_listener.py" name="multi_drone_position_velocity_listener" output="screen"/>
+
+    <!-- 发布静态tf -->
+    <node pkg="tf" type="static_transform_publisher" name="map_to_world" args="0 0 0 0 0 0 stereo_camera_frame base_link 100"/>
+    <!-- 启动RVIZ可视化工具 -->
+    <node name="rviz" pkg="rviz" type="rviz" args="-d $(find xtd_tutorial)/config/rviz/iris_circular_track.rviz"/>
+</launch>
